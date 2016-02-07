@@ -1,2 +1,2 @@
-# monitorP
-monitor de p
+# monitorPuebla
+monitorea las publicaciones de varios grupos de cuentas influyentes del #poblanishment
