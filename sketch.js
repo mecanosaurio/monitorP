@@ -98,7 +98,7 @@ function mousePressed(){
 		fill(127,255, 255);
 		rect(width/2-50,height-50,40,20);
 		index += 1;
-		if (index>15){
+		if (index>16){
 			index=0;
 		}
 	} else if ( ((mouseX>width/2+10) && (mouseX<width/2+60)) &&((mouseY>height-50)&&(mouseY<height-30)) ){
@@ -106,7 +106,7 @@ function mousePressed(){
 		rect(width/2+10,height-50,40,20);
 		index -= 1;
 		if (index<0){
-			index=15;
+			index=16;
 		}
 	}
 	  	//
