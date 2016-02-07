@@ -3,11 +3,13 @@ var i, j, k,r, ph;
 //var img = new p5.Image();
 var labels, cur_label, words, test_word, sort_words, mX, mN;
 
-var font1, font2;
+var font1, font2, url1;
 var index=0;
 function preload(){
 	font1  = loadFont("Minecraft.ttf");
 	font2 = loadFont("SadMachine.ttf");
+	ulr1 = "https://raw.githubusercontent.com/mecanosaurio/monitorP/master/data.json";
+	data = loadJSON(url1);
 }
 
 function setup() {
