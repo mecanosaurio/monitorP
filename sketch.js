@@ -55,7 +55,7 @@ function draw() {
 	textSize(52);
 	noStroke();
 	fill(0,245,0);
-	text(cur_label, width/2, 50);
+	text(cur_label, width/2, 65);
 	
 	// text for labels
 	textAlign(RIGHT);
@@ -87,13 +87,13 @@ function draw() {
 	text("-«-",width/2-110,height-38);
 	text("-»-",width/2+110,height-38);
 	noFill();
-	stroke(255,50);
+	stroke(255,150);
 	rect(width/2-130,height-50,40,20);
 	rect(width/2+90,height-50,40,20);
 
 	// draw time
 	noStroke();
-	fill(255, 60);
+	fill(255, 150);
 	textSize(18);
 	text(day()+'/'+month()+'/'+year(), width/2, height-40);
 	text(hour()+':'+minute()+':'+second(), width/2, height-30);
@@ -102,18 +102,18 @@ function draw() {
 function mousePressed(){
 	
 	if ( ((mouseX>width/2-130) && (mouseX<width/2-90)) &&((mouseY>height-50)&&(mouseY<height-30)) ){
-		fill(127,255, 255);
+		fill(255, 50);
 		rect(width/2-130,height-50,40,20);
 		index += 1;
-		if (index>16){
+		if (index>=16){
 			index=0;
 		}
 	} else if ( ((mouseX>width/2+90) && (mouseX<width/2+130)) &&((mouseY>height-50)&&(mouseY<height-30)) ){
-		fill(255, 32, 255);
+		fill(255, 80);
 		rect(width/2+90,height-50,40,20);
 		index -= 1;
 		if (index<0){
-			index=16;
+			index=15;
 		}
 	}
 	  	//
