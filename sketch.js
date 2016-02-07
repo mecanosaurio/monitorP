@@ -84,12 +84,19 @@ function draw() {
 	textSize(20);
 	noStroke();
 	fill(255,50);
-	text("«--",width/2-30,height-35);
-	text("--»",width/2+30,height-35);
+	text("-«-",width/2-30,height-35);
+	text("-»-",width/2+30,height-35);
 	noFill();
 	stroke(255,50);
-	rect(width/2-50,height-50,40,20);
-	rect(width/2+10,height-50,40,20);
+	rect(width/2-120,50,40,20);
+	rect(width/2+80,50,40,20);
+
+	// draw time
+	noStroke();
+	fill(255, 60);
+	textSize(18);
+	text(day()+'/'+month()+'/'+year(), width/2, height-20);
+	text(hour()+':'+minute()+':'+second(), width/2, height-10);
 }
 
 function mousePressed(){
